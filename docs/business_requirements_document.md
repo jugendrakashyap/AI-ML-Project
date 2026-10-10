@@ -82,24 +82,16 @@ $$P(\text{Churn}) \times P_{\text{success}} \times L_{\text{CLV}} > C_{\text{off
 
 ---
 
-## 4. Deliverables & Week-by-Week Roadmap
+## 4. Scope & Week 1 Deliverables
 
-```mermaid
-gantt
-    title 6-Week Project Roadmap
-    dateFormat  YYYY-MM-DD
-    section Week 1
-    Business Framing & Ingestion   :done, 2026-10-03, 2026-10-05
-    EDA & Data Quality Audit       :done, 2026-10-05, 2026-10-10
-    section Week 2
-    Feature Engineering & Baseline :active, 2026-10-10, 2026-10-17
-    section Week 3
-    Model Tuning & Explainability  :2026-10-17, 2026-10-24
-    section Week 4
-    FastAPI & Streamlit Deployment :2026-10-24, 2026-10-31
-    section Week 5
-    Executive Demo & Panel Pitch   :2026-10-31, 2026-11-07
-```
+1. **Business Framing & Data Ingestion:**
+   - Formalization of the business problem, tying churn to CLV ($\text{CLV} = \text{MonthlyCharges} \times \text{tenure}$).
+   - Ingestion and validation of raw dataset into `data/WA_Fn-UseC_-Telco-Customer-Churn.csv`.
+2. **Exploratory Data Analysis & Data Quality Audit:**
+   - Remediation of the `TotalCharges` blank-string quirk.
+   - Consolidation of redundant pseudo-categories (`"No internet service"` / `"No phone service"` $\rightarrow$ `"No"`).
+   - Cohort churn analysis across Contract type, Tenure buckets, and Payment channels.
+   - Formal hypothesis formulation and statistical testing.
 
 ---
 

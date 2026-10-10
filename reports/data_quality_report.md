@@ -114,7 +114,7 @@ Technology tier exhibits counter-intuitive pricing friction:
 
 ---
 
-## 5. Summary Conclusion & Readiness for Week 2
-- Data quirks have been thoroughly documented, resolved, and verified.
-- The raw dataset is clean, reproducible, and ready for Feature Engineering in Week 2 (`src/features.py`).
-- All deliverables for Week 1 (BRD, Raw Ingestion, EDA Notebook, Data Quality Report, Hypothesis List) are fully met.
+## 5. Summary & Audit Conclusion
+- All identified data quirks (`TotalCharges` blank strings and pseudo-categories) have been systematically resolved and validated.
+- The dataset integrity is verified across all 7,043 customer accounts.
+- Churn segmentation and hypothesis testing establish that Contract duration, Tenure, Payment method, and Technology tier are the primary drivers of subscriber attrition.
