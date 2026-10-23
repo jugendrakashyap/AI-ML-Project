@@ -271,7 +271,7 @@ SHAP (Shapley Additive Explanations) decomposes each customer prediction into ad
 
 ### 7.1 Global Feature Importance Ranking ([`src/explain.py`](../src/explain.py))
 
-| Rank | Feature Attribute | Mean |SHAP Value| Directional Impact on Churn |
+| Rank | Feature Attribute | Mean Absolute SHAP Value | Directional Impact on Churn |
 | :---: | :--- | :---: | :--- |
 | **1** | `Contract_Two year` | **0.5116** | Strong Negative (Significantly reduces churn risk) |
 | **2** | `tenure` | **0.3586** | Strong Negative (Higher accumulated months reduces churn risk) |
