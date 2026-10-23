@@ -17,6 +17,8 @@ ENV/
 models/*.pkl
 models/*.joblib
 mlruns/
+mlflow.db
+*.db
 .pytest_cache/
 
 # Data (Raw large sets or temp files, keep small data tracking)
